@@ -56,7 +56,8 @@ while 1:
 		for i in current:
 			if i.isdigit():
 				a = a + current
-		a = float(a)
+		#a = float(a)
+		print(a)
 		#current = [for i in current if i.isdigit()]
 		#difference = current - cur
 		difference = 100
