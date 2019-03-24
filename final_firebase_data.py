@@ -43,7 +43,7 @@ ref.set({
             }
         })
 
-ser = serial.Serial('/dev/ttyACM1', 9600, timeout=0)
+ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=0)
 
 cur = 0
 
@@ -51,9 +51,9 @@ while 1:
 	try:
 		current = ser.readline().strip()
 		print(current)
-		current = float(current[0])
-		# current = [int(i) for i in lsInput if i.isdigit()]
-		difference = current - cur
+		#current = float(current)
+		#current = [int(i) for i in current if i.isdigit()]
+		#difference = current - cur
 		difference = 100
 		if(difference>0):
 			if(difference>30 and difference<50):
