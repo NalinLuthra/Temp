@@ -49,11 +49,11 @@ cur = 0
 
 while 1:
 	try:
-		# current = 30
-		# print(current)
-		#current = float(current[0])
+		current = ser.readline().strip()
+		print(current)
+		current = float(current[0])
 		# current = [int(i) for i in lsInput if i.isdigit()]
-    	#difference = current - cur
+    	difference = current - cur
 		difference = 100
 		if(difference>0):
 			if(difference>30 and difference<50):
@@ -96,7 +96,7 @@ while 1:
 				box_ref.update({
 				    'Status': 'OFF'
 				})
-		#cur = current
+		cur = current
 	except IOError:
 		print('Error! Something went wrong.')
   #time.sleep(fixed_interval)
