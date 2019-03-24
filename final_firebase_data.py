@@ -43,7 +43,7 @@ ref.set({
             }
         })
 
-#ser = serial.Serial('/dev/ttyACM1', 9600, timeout=0)
+ser = serial.Serial('/dev/ttyACM1', 9600, timeout=0)
 
 cur = 0
 
