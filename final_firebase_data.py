@@ -51,6 +51,11 @@ while 1:
 	try:
 		current = ser.readline().strip()
 		print(current)
+		
+		value=current.split("'")
+
+		print(value)
+
 		#current = float(current)
 		a = ''
 		for i in current:
