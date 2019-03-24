@@ -49,7 +49,7 @@ cur = 0
 
 while 1:
 	try:
-		current = ser.readline()
+		current = ser.readline().strip()
 		print(current)
 		#current = float(current)
 		a = ''
@@ -57,6 +57,7 @@ while 1:
 			if i.isdigit():
 				a = a + current
 		a = float(a)
+		#current = [for i in current if i.isdigit()]
 		#difference = current - cur
 		difference = 100
 		if(difference>0):
