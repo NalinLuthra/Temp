@@ -53,7 +53,7 @@ while 1:
 		print(current)
 		current = float(current[0])
 		# current = [int(i) for i in lsInput if i.isdigit()]
-    	difference = current - cur
+		difference = current - cur
 		difference = 100
 		if(difference>0):
 			if(difference>30 and difference<50):
